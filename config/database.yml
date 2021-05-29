@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: pictweet_new_production
-  username: pictweet_new
-  password: <%= ENV['PICTWEET_NEW_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
